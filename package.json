@@ -1,0 +1,24 @@
+{
+  "name": "train-coupling-system",
+  "version": "1.0.0",
+  "description": "A system for coupling locomotives, managing train operations, and platform announcements.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "train",
+    "railway",
+    "locomotive",
+    "coupling",
+    "shunting",
+    "platform management",
+    "rail operations",
+    "freight",
+    "passenger train",
+    "railway automation"
+  ],
+  "author": "Locomotive Coupling System",
+  "license": "ISC"
+}

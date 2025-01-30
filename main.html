@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Coupling and Shunting System - Table View</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome for icons -->
+</head>
+<body>
+    <header>
+        <h1>Train Flow System</h1>
+        <p>Railworks and Rail Operations</p>
+    </header>
+
+    <div class="container">
+        <h1>Train Coupling and Shunting Operations - Table View</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Operation</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Select Locomotive</td>
+                    <td>
+                        <label for="loco">Locomotive:</label>
+                        <select id="loco"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Enter Number of Locomotives</td>
+                    <td>
+                        <input type="number" id="num-locos" min="1" max="3" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Select Coach Type</td>
+                    <td>
+                        <label><input type="radio" id="coach1" name="coach" value="Passenger"> Passenger</label>
+                        <label><input type="radio" id="coach2" name="coach" value="Freight"> Freight</label>
+                        <label><input type="radio" id="coach3" name="coach" value="Track Inspection Car"> Track Inspection Car</label>
+                        <label><input type="radio" id="coach4" name="coach" value="MMTS">MMTS</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Choose Coach Type</td>
+                    <td>
+                        <select id="coaches"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Enter Number of Coaches</td>
+                    <td>
+                        <label><input type="radio" name="num-coaches" value="3"> 3</label>
+                        <label><input type="radio" name="num-coaches" value="8"> 8</label>
+                        <label><input type="radio" name="num-coaches" value="12"> 12</label>
+                        <label><input type="radio" name="num-coaches" value="18"> 18</label>
+                        <label><input type="radio" name="num-coaches" value="24"> 24</label>
+                        <label><input type="radio" name="num-coaches" value="30"> 30</label>
+                        <label><input type="radio" name="num-coaches" value="40"> 40</label>
+                        <label><input type="radio" name="num-coaches" value="50"> 50</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Select Platform</td>
+                    <td>
+                        <select id="platform"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Couple Coaches to Locomotive</td>
+                    <td>
+                        <button id="couple-btn"><i class="fas fa-train"></i> Couple Coaches to Locomotive</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Shunt Train to Platform</td>
+                    <td>
+                        <button id="done-btn"><i class="fas fa-train"></i> Shunt Train to Platform</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Give Announcement to Platform</td>
+                    <td>
+                        <button id="announce-btn"><i class="fas fa-bullhorn"></i> Give Announcement to Platform</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="result"></div>
+        <div id="announcement"></div>
+        <div id="loco-details">
+            <h3>Locomotive Details</h3>
+            <p><strong>Type:</strong> <span id="loco-type"></span></p>
+            <p><strong>Use:</strong> <span id="loco-use"></span></p>
+            <p><strong>Horsepower:</strong> <span id="loco-hp"></span></p>
+            <p><strong>Features:</strong> <span id="loco-features"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Train Coupling & Shunting System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
