@@ -24,5 +24,5 @@ A system for coupling locomotives, managing train operations, and platform annou
 1. Clone this repository to your local machine.
 
    ```bash
-   git clone https://github.com/yourusername/train-coupling-system.git
+   git clone [https://github.com/yourusername/train-coupling-system.git](https://github.com/MAVERICK400x/train-flow)
    ```
